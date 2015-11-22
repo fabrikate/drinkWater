@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drip Drip</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.9.24/paper-full.js'></script>
+	<script type="text/javascript" src='script.js'></script>
+	<script type='text/paperscript' canvas='myCanvas' src="paperScript.js"></script>
+</head>
+<body>
+	<canvas id='myCanvas' resize></canvas>
+	<section id='header'>
+		<h1>Water water everywhere, but how much do I drink?</h1>
+	</section>
+
+	<section id='waterCalc'>
+		<label>How many 12oz water bottles should you drink per day?
+			<input id='numBottlesGuess'>
+		</label>
+		<p></P>
+		<form>
+			<label>Enter your weight:
+				<input id='weight' type='password'>
+			</label>
+		</form>
+		<p>Water Bottle Preference</p>
+		<select>
+			<option>12oz</option>
+			<option>16oz</option>
+			<option>32oz</option>
+		</select>
+		<button>Enter</button>
+		<p id='results'>How much water a day should you drink? </p>
+	</section>
+</body>
+</html>
